@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF13E8C31FAF8495009E0BF7 /* GaTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF13E8C31FAF8495009E0BF7 /* TresEnRaya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TresEnRaya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF13E8C61FAF8495009E0BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF13E8C81FAF8495009E0BF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF13E8CB1FAF8495009E0BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		CF13E8BA1FAF8495009E0BF7 = {
 			isa = PBXGroup;
 			children = (
-				CF13E8C51FAF8495009E0BF7 /* GaTO */,
+				CF13E8C51FAF8495009E0BF7 /* TresEnRaya */,
 				CF13E8C41FAF8495009E0BF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		CF13E8C41FAF8495009E0BF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF13E8C31FAF8495009E0BF7 /* GaTO.app */,
+				CF13E8C31FAF8495009E0BF7 /* TresEnRaya.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF13E8C51FAF8495009E0BF7 /* GaTO */ = {
+		CF13E8C51FAF8495009E0BF7 /* TresEnRaya */ = {
 			isa = PBXGroup;
 			children = (
 				CF13E8C61FAF8495009E0BF7 /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				CF13E8CF1FAF8495009E0BF7 /* LaunchScreen.storyboard */,
 				CF13E8D21FAF8495009E0BF7 /* Info.plist */,
 			);
-			path = GaTO;
+			path = TresEnRaya;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF13E8C21FAF8495009E0BF7 /* GaTO */ = {
+		CF13E8C21FAF8495009E0BF7 /* TresEnRaya */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF13E8D51FAF8495009E0BF7 /* Build configuration list for PBXNativeTarget "GaTO" */;
+			buildConfigurationList = CF13E8D51FAF8495009E0BF7 /* Build configuration list for PBXNativeTarget "TresEnRaya" */;
 			buildPhases = (
 				CF13E8BF1FAF8495009E0BF7 /* Sources */,
 				CF13E8C01FAF8495009E0BF7 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = GaTO;
+			name = TresEnRaya;
 			productName = GaTO;
-			productReference = CF13E8C31FAF8495009E0BF7 /* GaTO.app */;
+			productReference = CF13E8C31FAF8495009E0BF7 /* TresEnRaya.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -92,7 +92,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "Jorge Maldonado Borbón";
+				ORGANIZATIONNAME = codelapp;
 				TargetAttributes = {
 					CF13E8C21FAF8495009E0BF7 = {
 						CreatedOnToolsVersion = 9.1;
@@ -100,8 +100,8 @@
 					};
 				};
 			};
-			buildConfigurationList = CF13E8BE1FAF8495009E0BF7 /* Build configuration list for PBXProject "GaTO" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = CF13E8BE1FAF8495009E0BF7 /* Build configuration list for PBXProject "TresEnRaya" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF13E8C21FAF8495009E0BF7 /* GaTO */,
+				CF13E8C21FAF8495009E0BF7 /* TresEnRaya */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +216,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -265,7 +266,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -275,9 +277,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GaTO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.GaTO;
+				DEVELOPMENT_TEAM = WQWRXX9PHB;
+				INFOPLIST_FILE = TresEnRaya/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +295,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GaTO/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.GaTO;
+				DEVELOPMENT_TEAM = WQWRXX9PHB;
+				INFOPLIST_FILE = TresEnRaya/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF13E8BE1FAF8495009E0BF7 /* Build configuration list for PBXProject "GaTO" */ = {
+		CF13E8BE1FAF8495009E0BF7 /* Build configuration list for PBXProject "TresEnRaya" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF13E8D31FAF8495009E0BF7 /* Debug */,
@@ -310,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF13E8D51FAF8495009E0BF7 /* Build configuration list for PBXNativeTarget "GaTO" */ = {
+		CF13E8D51FAF8495009E0BF7 /* Build configuration list for PBXNativeTarget "TresEnRaya" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF13E8D61FAF8495009E0BF7 /* Debug */,
